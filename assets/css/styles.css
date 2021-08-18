@@ -80,21 +80,20 @@ header{
 
 @media only screen and (max-width: 600px) {
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 68px;
-      flex-direction: column;
-      background-color: #324e74;
-      opacity: 90%;
-      width: 100%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      text-align: center;
-      transition: 0.5s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    left: -100%;
+    top: 68px;
+    flex-direction: column;
+    background-color: #324e74;
+    opacity: 90%;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
   .navbar {
@@ -155,6 +154,10 @@ header{
   .navbar {
     display: flex;
     flex-wrap: nowrap !important;
+  }
+
+  .nav-link {
+    padding: 0 !important;
   }
 
   .experience {
@@ -226,9 +229,16 @@ h3 {
 
   .big-container {
     margin: 120px auto 0 auto;
-    width: 80%;
+    width: 90%;
    }
+}
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+  .big-container {
+    margin: 120px auto 0 auto;
+    width: 90%;
+   }
 }
 
 /* STILE SCROLLBAR */
@@ -341,12 +351,12 @@ margin-left: auto;
 }
 
 .titles > h2 {
-    font-family: "Raleway", sans-serif;
-    font-size: 36px;
-    color: #495867;
-    font-weight: 700;
-    line-height: 20px;
-    margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  color: #495867;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 0;
 }
 
 .titles > img {
@@ -377,8 +387,8 @@ margin-left: auto;
 }
 
 .timeline > img {
- margin-top: 50px;
- width: 100%;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .mobile-icon {
@@ -737,6 +747,12 @@ textarea:active {
 
   .contact-form-wrapper {
     height: 570px;
+  }
+
+  .social > a > img {
+    margin-top: 30px;
+    margin-right: 50px;
+    width: 40px;
   }
 }
 
