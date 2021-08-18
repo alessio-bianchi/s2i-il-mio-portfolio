@@ -76,6 +76,8 @@ header{
   color: #FE5F55 !important;
 }
 
+/* HEADER RESPONSIVE */
+
 @media only screen and (max-width: 600px) {
   .nav-menu {
       position: fixed;
@@ -212,7 +214,15 @@ h3 {
  width: 80%;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .big-container {
+    margin: 100px 0;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
 
   .big-container {
     margin: 120px auto 0 auto;
@@ -222,14 +232,14 @@ h3 {
 }
 
 /* STILE SCROLLBAR */
-  /* Firefox */
 
+  /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #FE5F55;
+  scrollbar-color: #577399;
 }
 
-/* Chrome, Edge, and Safari */
+/* Chrome, Edge, Safari */
 *::-webkit-scrollbar {
   width: 6px;
 }
@@ -239,21 +249,8 @@ h3 {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #FE5F55;
+  background-color: #577399;
   border-radius: 8px;
-}
-
-.med-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-@media screen and (max-width:600px) {
-  .big-container {
-    margin: 120px 0;
-    width: 100%;
-    padding: 0 15px;
-  }
 }
 
 /* STILE SLIDER CON FOTO */
@@ -283,7 +280,7 @@ margin-left: auto;
   text-decoration-line: underline;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   
   .intro {
     display: flex;
@@ -324,6 +321,7 @@ margin-left: auto;
   .intro {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .intro > img {
@@ -333,14 +331,13 @@ margin-left: auto;
   }
 }
 
-
-
 /* STILE TITOLI */
 
 .titles {
   display: flex;
   flex-direction: row;
   margin: 50px auto;
+  align-items: center;
 }
 
 .titles > h2 {
@@ -349,6 +346,7 @@ margin-left: auto;
     color: #495867;
     font-weight: 700;
     line-height: 20px;
+    margin-bottom: 0;
 }
 
 .titles > img {
@@ -432,9 +430,6 @@ margin-left: auto;
   .mobile-icon {
     display: block;
   }
-
-  
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -442,7 +437,6 @@ margin-left: auto;
   .timeline > img {
     width: 100%;
    }
-
 }
 
 @media screen and (max-width:1024px) {
@@ -450,7 +444,6 @@ margin-left: auto;
   .timeline > img {
     width: 100%;
    }
-
 }
 
 /* SEZIONE STUDIO-LAVORO */
@@ -508,6 +501,15 @@ margin-left: auto;
   color: #FE5F55;
 }
 
+@media screen and (max-width: 1024px) {
+
+  .wtdpbigcontainer {
+    padding: 30px 0 0 0;
+  }
+}
+
+/* CAROSELLO MOBILE */
+
 @media screen and (max-width: 600px) {
 
   .threecontainer {
@@ -533,13 +535,13 @@ margin-left: auto;
   }
 
   .carousel-control-prev-icon {
-    background: url("assets/prev-icon.svg") !important;
+    background: url("/assets/images/prev-icon.svg") !important;
     background-repeat: no-repeat !important;
     width: 20px !important;
   }
 
   .carousel-control-next-icon { 
-    background: url("assets/next-icon.svg") !important;
+    background: url("/assets/images/next-icon.svg") !important;
     background-repeat: no-repeat !important;
   }
 }
@@ -560,12 +562,12 @@ margin-left: auto;
   }
 
   .carousel-control-prev-icon {
-    background: url("assets/prev-icon.svg") !important;
+    background: url("/assets/images/prev-icon.svg") !important;
     background-repeat: no-repeat !important;
   }
 
   .carousel-control-next-icon { 
-    background: url("assets/next-icon.svg") !important;
+    background: url("/assets/images/next-icon.svg") !important;
     background-repeat: no-repeat !important;
   }
 }
@@ -580,16 +582,7 @@ margin-left: auto;
   .carousel-control-prev {
     width: 14% !important;
     bottom: 80px !important;
-  }
-  
-}
-
-@media screen and (max-width: 1024px) {
-
-  .wtdpbigcontainer {
-    padding: 30px 0 0 0;
-  }
-
+  }  
 }
 
 /* STILE FORM CONTATTO */
@@ -703,17 +696,6 @@ textarea:active {
   color: #324e74;
 }
 
-/* CPRT FINALE FUORI DA FORM */
-
-#cprt {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  font-style: italic;
-  margin-top: 70px;
-  text-align: center;
-}
-
 @media screen and (max-width:600px) {
 
   #my-form-button {
@@ -756,5 +738,15 @@ textarea:active {
   .contact-form-wrapper {
     height: 570px;
   }
+}
 
+/* NOME/DATA FINALE */
+
+#cprt {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 70px;
+  text-align: center;
 }
