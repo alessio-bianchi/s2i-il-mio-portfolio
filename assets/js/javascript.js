@@ -1,13 +1,13 @@
 // PROGRESS BAR 
 
 
-    window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
-    function myFunction() {
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      document.getElementById("myBar").style.width = scrolled + "%";
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 
@@ -27,10 +27,10 @@ const navLink = document.querySelectorAll(".nav-link");
 
   navLink.forEach(n => n.addEventListener("click", closeMenu));
   
-  function closeMenu() {
-      hamburger.classList.remove("active");
-      navMenu.classList.remove("active");
-  }
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
   
 // CAROSELLO
 
